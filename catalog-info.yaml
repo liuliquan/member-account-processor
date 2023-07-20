@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: member-account-processor
+  tags:
+    - javascript
+  annotations:
+    backstage.io/source-location: url:https://github.com/topcoder-platform/member-account-processor
+    github.com/project-slug: topcoder-platform/member-account-processor
+spec:
+  type: service
+  owner: backstage-dev
+  lifecycle: production
