@@ -241,7 +241,7 @@ async function processUserLogin (message, producer) {
   logger.info(`Member profile update message is successfully sent to Kafka topic ${outputMessage.topic}`)
 
   // send UPDATE event to Harmony
-  await helper.sendHarmonyEvent("UPDATE", "Member", memberProfile)
+  await helper.sendHarmonyEvent("UPDATE", "Member", member)
 }
 
 processUserLogin.schema = {
